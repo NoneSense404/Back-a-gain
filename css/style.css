@@ -4,13 +4,14 @@
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 :root {
   --mainColor: #10cab7;
@@ -53,13 +54,18 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
+
+/* icon setting */
+i {
+  color: var(--mainColor);
+}
 /* End Global Rules */
 
 /* Components */
 .special-heading {
   color: #ebeced;
   font-size: 100px;
-  font-weight: 800;
+  font-weight: 900;
   text-align: center;
   letter-spacing: -3px;
   margin: 0;
@@ -89,11 +95,8 @@ body {
   padding: 20px;
 }
 
-.header .logo,
-.srv .logosrv {
-  flex-basis: 50px;
-  height: 50px;
-  border-radius: 50%;
+.header .logo {
+  width: 60px;
 }
 
 .header .links {
@@ -217,7 +220,7 @@ body {
 }
 
 .features .feat h3 {
-  font-weight: 800;
+  font-weight: 900;
   margin: 30px 0;
 }
 
@@ -323,7 +326,7 @@ body {
 }
 
 .portfolio .port h3 {
-  font-weight: 800;
+  font-weight: 900;
   margin: 20px 0 0;
 }
 
@@ -455,7 +458,7 @@ body {
 .contact .text p:first-child {
   color: #2c4755;
   font-size: 50px;
-  font-weight: 800;
+  font-weight: 900;
   word-spacing: -5px;
   letter-spacing: -4px;
   margin: 0;
@@ -463,7 +466,7 @@ body {
 .contact .text p:last-child span {
   color: var(--mainColor);
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 900;
   word-spacing: -5px;
   letter-spacing: -4px;
   margin: 0;
@@ -483,14 +486,9 @@ body {
 .contact .social {
   color: #777;
 }
-
-.contact .social img {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin-right: 5px;
-  margin-left: 5px;
+.contact .social i {
+  color: #333;
+  padding: 10px;
 }
 @media (max-width: 767px) {
   .contact .text {
